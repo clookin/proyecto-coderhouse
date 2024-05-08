@@ -1,0 +1,218 @@
+@media (max-width: 762px) {
+  .abrir_menu,
+  .cerrar_menu {
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+  }
+  .cerrar_menu{
+    width: 30px;
+    height: 30px;
+    margin-top: 1rem;
+  }
+  .cerrar_menu i{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 100;
+    background-color: rgb(100, 19, 138);
+    box-shadow: 0 0 0 100vmax rgba(236, 236, 236, 0.226);
+    height: 100vh;
+    width: 130px;
+    transition: all 0.5s;
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav_list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav_list li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 13px;
+  }
+  .caja-introduccion__introduccion{
+    font-size: 20px;
+    width: 350px;
+  }
+  .caja-introduccion__parrafo{
+    padding: 1rem;
+  }
+  .caja-introduccion__imagen{
+    width: 250px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #dbbce4;
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+  }
+
+  .icon-footer {
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  .logo-footer{
+    margin-left: 0px;
+  }
+  .contenedor__equipo{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 1rem;
+  }
+  .caja-introduccion__introduccion{
+    padding: 5rem 2rem 1rem 2rem ;
+  }
+  .contenedorImagenesBeneficios{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cajaImagenesBeneficios{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+  .imagenBeneficios{
+    width: 50px;
+  }
+  .tituloImagenesBeneficios{
+    font-size: 15px;
+    padding: 0;
+  }
+  .tituloBeneficios{
+    font-size: 20px;
+    padding: 1rem;
+  }
+  .section4{
+    margin-bottom: 2rem;
+  }
+  .cajadeTextoImagen-dos{
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .imagenCajaTexto2{
+    margin-left: 0;
+  }
+  .cajadeTextoImagen-dos img{
+    width: 50%;
+  }
+  .cajadeTexto-secundaria{
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    padding-top: 3rem;
+  }
+  .btn-registro{
+    font-size: 18px;
+  }
+  .breveDescripcion{
+    font-size: 20px;
+    padding: 2rem;
+  }
+  .section2{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+  .skillsMentorya{
+    width: 90%;
+    background-color: $--main-cont-color;
+    color: $--main-bgd-color;
+    box-shadow: none;
+    text-align: center;
+  }
+  .skillsMentorya h3{
+    font-size: 18px;
+  }
+  .skillsMentorya img {
+    width: 90px;
+  }
+  .section-article__two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .explicacion{
+    font-size: 20px;
+    padding: 2rem;
+  }
+  .cajadeTextoImagen{
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cajadeTexto{
+    width: 100%;
+    font-size: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  .imagenCajaTexto1{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+  }
+  .section-one-figure{
+    display: flex;
+    justify-content: center;
+  }
+  .cajaIntroduccion{
+    height: 350px;
+    padding-top: 5rem;
+  }
+  .breveDescripcion{
+    font-size: 20px;
+  }
+  .cajaIntroduccion p{
+    font-size: 25px;
+  }
+  .section1{
+    margin-top: 0;
+  }
+  .abrir-menu-contacto{
+    color: black;
+  }
+  .contacto{
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-position: bottom;
+  }
+  .form{
+    width: 100%;
+  }
+}

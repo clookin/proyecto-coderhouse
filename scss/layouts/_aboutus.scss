@@ -1,0 +1,38 @@
+/* pagina Nosotros */
+
+/* Implementacion de Grid */
+.caja-introduccion__introduccion {
+  padding: 3rem;
+  padding-top: 5rem;
+  align-items: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  font-size: 35px;
+}
+.caja-introduccion__parrafo{
+background-color: #ceedf8;
+font-weight: 500;
+color: $--main-bgd-color;
+padding: 1.5rem;
+border-radius: 10px;
+}
+.caja-introduccion__imagen{
+overflow: hidden;
+padding: 10px;
+object-fit: cover;
+}
+.caja-introduccion__introduccion img{
+  justify-self: center;
+  width: 100%;
+}
+.contenido__descripcion-mision-vision{
+  display: flex;
+}
+.caja-descripcion{
+    display: flex;
+  flex-direction: column;
+}

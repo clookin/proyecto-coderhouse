@@ -1,0 +1,233 @@
+.cajaIntroduccion {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-image: url(./assets/background-index.jpg), url(/assets/background-index.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 100ms;
+  opacity: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.cajaIntroduccion:hover {
+  filter: none;
+  transition: 800ms;
+}
+
+.cajaIntroduccion p {
+  font-size: 60px;
+  background-color: rgba(100, 19, 138, 0.6306897759103641);
+  color: white;
+  transition: 2s;
+  width: 100%;
+  padding: 20px;
+}
+.introduccion{
+  width: 100%;
+  text-align: center;
+}
+
+/*---AGREGAR ESTILO*/
+
+/*Inicio del contenido*/
+.section1,
+.section2,
+.section3,
+.section4 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.breveDescripcion,
+.explicacion,
+.tituloBeneficios {
+  font-size: 35px;
+  padding: 5rem 3rem;
+  background-blend-mode: color;
+  text-align: center;
+}
+
+.cajadeTextoImagen {
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+}
+.cajadeTextoImagen-dos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 50px;
+}
+
+.cajadeTexto {
+  padding: 3rem;
+  width: 55vw;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 10rem;
+}
+.cajadeTexto-secundaria {
+  width: 60%;
+  padding: 50px;
+}
+.listaCajadeTexto li {
+  padding: 0.2rem;
+}
+
+.imagenCajaTexto1 {
+  width: 22vw;
+  border-radius: 15% 50% 18% 50%;
+  box-shadow: 5px 5px 10px #888888;
+  transition: 1000ms;
+  margin-left: 2rem;
+}
+
+.btn-registro {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.btn-registro a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #f5f5f5;
+  background: transparent;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid #f5f5f5;
+}
+
+.btn-registro a:hover {
+  font-size: 37px;
+  transition: 600ms;
+  color: white;
+}
+
+.imagenCajaTexto2 {
+  width: 23vw;
+  border-radius: 40% 15% 40% 18%;
+  box-shadow: 5px 5px 10px #888888;
+  transition: 1000ms;
+  margin-left: 2rem;
+  object-fit: cover;
+}
+.explicacion {
+  text-align: center;
+  transition: 700ms;
+}
+
+.section2 h3 {
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  transition: 2s;
+}
+
+.skillsMentorya {
+  background: linear-gradient(
+    0deg,
+    rgba(82, 82, 82, 0.2049194677871149) 100%,
+    rgba(94, 94, 94, 0.6334908963585435) 100%
+  );
+  box-shadow: 5px 5px 10px #888888;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  transition: 1s;
+  width: 23vw;
+}
+
+.skillsMentorya:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(111, 90, 120, 0.925) 35%,
+    rgba(62, 31, 71, 1) 100%
+  );
+  box-shadow: 5px 5px 10px #f5f5f5;
+  transition: 80ms;
+  font-size: 20px;
+  width: 25vw;
+}
+
+.section2 img {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+
+.section2 a {
+  color: white;
+  text-decoration: none;
+  background-color: $--main-bg-color;
+}
+
+.section2 a:hover {
+  background-color: $--main-cont-color;
+  color: black;
+  font-size: 17px;
+}
+
+.beneficios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contenedorImagenesBeneficios {
+  display: flex;
+}
+
+.cajaImagenesBeneficios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(111, 90, 120, 0.925) 20%,
+    rgba(62, 31, 71, 1) 80%
+  );
+  border-radius: 15px;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  filter: blur(0.5px);
+  width: 200px;
+  height: 200px;
+}
+.tituloImagenesBeneficios {
+  padding-top: 2rem;
+  font-size: 25px;
+  text-align: center;
+}
+
+.imagenBeneficios {
+  width: 5vw;
+  transition: 1s;
+}
+
+.imagenBeneficios:hover {
+  width: 6vw;
+}
+

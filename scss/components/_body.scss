@@ -1,0 +1,12 @@
+body {
+  background: $--main-bg-color;
+  background:$--main-bg-deg-color;
+  background: linear-gradient(
+    0deg,
+    rgba(33, 47, 69, 0.9248074229691877) 35%,
+    rgba(62, 31, 71, 1) 100%
+  );
+}
+main {
+  color: white;
+}
