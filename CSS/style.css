@@ -285,8 +285,7 @@ img.logo-contacto {
   padding: 0;
   margin: 0;
   height: 100vh;
-  background-image: url(/assets/background-index.jpg);
-  background-image: url(./assets/background-index.jpg);
+  background-image: url(../../assets/background-index.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
