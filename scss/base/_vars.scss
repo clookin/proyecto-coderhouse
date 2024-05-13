@@ -3,8 +3,16 @@ $--main-cont-color: #ecfdfe;
 $--main-bgd-color: #212f45;
 $--main-bg-deg-color: rgb(33, 47, 69);
 $--contrast-color: rgb(255, 55, 0);
-
+$colorTextos: black;
 $transition-short: 100ms;
 $transition-long: 1000ms;
 $transition-extra-long: 2s;
 $box-shadow: 5px 5px 10px #888888;
+
+$main-bgd-color: #dc9d00;
+$contrast-color: #fff;
+$button-font-size: .8rem;
+$button-font-weight: 600;
+$button-height: 36px;
+$button-border: 1.5px solid $main-bgd-color;
+$button-padding: 5px;

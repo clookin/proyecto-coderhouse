@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/CSS/index.css">
+  <link rel="stylesheet" href="../CSS/style.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -15,46 +15,44 @@
 
 <body>
   <header class="header">
-    <img class="logo" src="/assets/Logo-Mentorya[1].svg" alt="logo">
+    <img class="logo" src="../assets/Logo-Mentorya-white.svg" alt="logo">
     <button id="abrir" class="abrir_menu"><i class="bi bi-list"></i></button>
 
     <nav class="nav" id="nav">
       <button id="cerrar" class="cerrar_menu"><i class="bi bi-x-lg"></i></button>
       <ul class="nav_list">
-        <li class="contenedor-li"><a href="/index.html">Inicio</a></li>
-        <li class="contenedor-li"><a href="/pages/contacto.html">Contacto</a></li>
-        <li class="contenedor-li"><a href="/pages/nosotros.html">Nosotros</a></li>
-        <li class="contenedor-li back-logo"><a href="/pages/registro.html" class="color-a">Registro</a></li>
+        <li class="contenedor-li"><a href="../index.html">Inicio</a></li>
+        <li class="contenedor-li"><a href="./contacto.html">Contacto</a></li>
+        <li class="contenedor-li"><a href="./nosotros.html">Nosotros</a></li>
+        <li class="contenedor-li back-logo"><a href="./productos.html" class="color-a">Productos</a></li>
       </ul>
   </header>
   <main>
-    <!-- CONTENIDO DE LA PÁGINA -->
-    <form id="formulario">
-      <div class="login" id="formulario">
-        <h1 class="h1">Login</h1>
-        <div class="grupo">
-          <input class="input" id="name" name="name" type="text"  required><span class="barra"></span>
-          <label for="">Nombre</label>
-        </div>
-        <div class="grupo">
-          <input class="input" type="password" id="password" name="password" password required><span class="barra"></span>
-          <label for="">Contraseña</label>
-        </div>
-        <div class="grupo">
-          
-          ¿olvido su contraseña?
-        </div>
-        <button class="boton-reg" type="submit">Iniciar sesión</button>
-        <div class="registro grupo">
-          <small>
-
-            No tienes cuenta <a href="/pages/registro.html">Registrate</a>
-          </small>
-        </div>
-      </div>
-    </form>
-  </main>
-  <!-- PIE DE PÁGINA -->
+    <section class="main-login">
+      <form class="formulario-login">
+        <section class="login">
+          <h1 class="titulo-login">Login</h1>
+          <div class="grupo-input">
+            <input class="input-texto" id="name" name="name" type="text"  required><span class="barra-input"></span>
+            <label class="label-login" for="name">Nombre</label>
+          </div>
+          <div class="grupo-input">
+            <input class="input-texto" type="password" id="password" name="password" required><span class="barra-input"></span>
+            <label class="label-login" for="password">Contraseña</label>
+          </div>
+          <div class="grupo-input">
+            <a href="#">¿Olvidó su contraseña?</a>
+          </div>
+          <button class="boton-registro" type="submit">Iniciar sesión</button>
+          <div class="grupo-registro">
+            <small>
+              No tienes cuenta <a href="/pages/registro.html">Regístrate</a>
+            </small>
+          </div>
+        </section>
+      </form>
+    </section>
+</main>
   <footer class="footer">
     <section class="logo-footer">
       <p>Mentorya</p>

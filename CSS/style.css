@@ -166,6 +166,70 @@ img.logo:hover {
   color: #ecfdfe !important;
 }
 
+#home-anim {
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+}
+
+#home {
+  clip-path: url(#cache);
+}
+
+#red {
+  fill: none;
+  opacity: 0.15;
+  stroke: #CE1B5F;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#blue {
+  fill: none;
+  opacity: 0.15;
+  stroke: #06A1C4;
+  stroke-width: 12;
+  stroke-miterlimit: 10;
+  animation: show 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#light-blue {
+  fill: none;
+  opacity: 0.15;
+  stroke: #06A1C4;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 800;
+  animation: draw 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
 /* pagina Nosotros */
 /* Implementacion de Grid */
 .caja-introduccion__introduccion {
@@ -212,25 +276,13 @@ img.logo:hover {
 .contacto {
   display: flex;
   justify-content: end;
+  background: url("../assets/contacto.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
 }
-
-.nav-contacto {
-  background-color: white;
-}
-
-.nav-list-contacto li a {
-  color: #212f45;
-}
-
-img.logo-contacto {
-  height: 60px;
-  width: 60px;
-  background-color: rgb(255, 55, 0);
-  border-radius: 10px;
-  transition: all 1s ease-in-out;
-}
-
-.form {
+.contacto .form {
   background: white;
   display: flex;
   flex-direction: column;
@@ -241,15 +293,13 @@ img.logo-contacto {
   padding: 1rem 3rem;
   margin-top: 3rem;
 }
-
-.form label {
+.contacto .form label {
   font-weight: bold;
   color: #212f45;
 }
-
-.form input,
-.form textarea,
-.form button {
+.contacto .form input,
+.contacto .form textarea,
+.contacto .form button {
   width: 100%;
   border-radius: 2px;
   height: 36px;
@@ -257,35 +307,44 @@ img.logo-contacto {
   font-size: 14px;
   padding: 5px;
 }
-
-.form textarea {
+.contacto .form textarea {
   height: 10%;
 }
-
-.form button {
+.contacto .form button {
+  width: 100%;
+  border-radius: 2px;
+  height: 36px;
+  border: 1.5px solid #dc9d00;
+  font-size: 14px;
+  padding: 5px;
   background-color: rgb(255, 55, 0);
   color: #fff;
   font-weight: 600;
   font-size: 0.8rem;
 }
-
-.form button:hover {
+.contacto .form button:hover {
   cursor: pointer;
 }
 
-.contacto {
-  background: url("../assets/contacto.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-  height: 100vh;
+.nav-contacto {
+  background-color: white;
+}
+.nav-contacto .nav-list-contacto li a {
+  color: #212f45;
+}
+.nav-contacto img.logo-contacto {
+  height: 60px;
+  width: 60px;
+  background-color: rgb(255, 55, 0);
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
 }
 
 .cajaIntroduccion {
   padding: 0;
   margin: 0;
   height: 100vh;
-  background-image: url("/proyecto-coderhouse/assets/background-index.jpg");
+  background-image: url("../assets/background-index.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -507,6 +566,254 @@ img.logo-contacto {
   width: 6vw;
 }
 
+main .main-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main .main-login .formulario-login {
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  width: 350px;
+  height: 400px;
+}
+main .main-login .formulario-login .login {
+  width: 100%;
+  margin: auto;
+}
+main .main-login .formulario-login .login .titulo-login {
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  color: black;
+}
+main .main-login .formulario-login .login .grupo-input {
+  position: relative;
+  margin: 30px 30px;
+}
+main .main-login .formulario-login .login .grupo-input .input-texto {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+main .main-login .formulario-login .login .grupo-input .input-texto:focus {
+  outline: none;
+  color: #5e5d5d;
+}
+main .main-login .formulario-login .login .grupo-input .input-texto:valid ~ label {
+  top: -14px;
+  font-size: 14px;
+  color: #2196f3;
+}
+main .main-login .formulario-login .login .grupo-input .input-texto:valid ~ .barra-input::before {
+  width: 100%;
+}
+main .main-login .formulario-login .login .grupo-input .label-login {
+  color: black;
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease-in-out all;
+  pointer-events: none;
+}
+main .main-login .formulario-login .login .grupo-input .barra-input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #969696;
+}
+main .main-login .formulario-login .login .grupo-input .barra-input::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #B06AB3, #4568DC);
+  transition: 0.3s ease width;
+  left: 0;
+}
+main .main-login .formulario-login .login .boton-registro {
+  background: #4568DC;
+  background: linear-gradient(to right, #B06AB3, #4568DC);
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: bold;
+}
+main .main-login .formulario-login .login .grupo-registro {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  color: black;
+}
+
+.contenido {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-top: 3rem;
+}
+.contenido .contenido__filtro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 400px;
+  height: 80vh;
+  border-radius: 10px;
+  line-height: 25px;
+  animation: slide-filt-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  position: relative;
+  z-index: 10;
+}
+.contenido .contenido__filtro .filtro__main {
+  color: var(--main-cont-color);
+  font-size: 27px;
+  line-height: 40px;
+  animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  padding-bottom: 1rem;
+}
+.contenido .contenido__filtro .filtro__main p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 15px;
+}
+.contenido .contenido__filtro .filtro__main h1 {
+  color: orangered;
+}
+.contenido .contenido__filtro .filtro__contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 16rem;
+  height: 20rem;
+  border-radius: 10px;
+  background-color: #ecfdfe;
+}
+.contenido .contenido__filtro .filtro__contenedor h1 {
+  font-weight: bold;
+  font-family: "Overpass", sans-serif;
+  color: #3e1f47;
+}
+.contenido .contenido__filtro .filtro__contenedor .Contenedor__input {
+  display: flex;
+  flex-direction: column;
+}
+.contenido .contenido__filtro .filtro__contenedor .Contenedor__input label {
+  color: rgb(33, 47, 69);
+}
+.contenido .contenido__filtro .filtro__contenedor .Contenedor__input-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  color: #4a4747;
+  gap: 10px;
+}
+.contenido .contenido__filtro .filtro__contenedor .Contenedor__input-check:hover {
+  color: black;
+}
+.contenido .contenido__filtro .filtro__contenedor .input_filtro {
+  width: 220px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #928e8e;
+  color: #928e8e;
+}
+.contenido .contenido__filtro .filtro__contenedor .input_filtro:focus {
+  outline: none;
+}
+.contenido .container {
+  background: linear-gradient(0deg, rgba(82, 82, 82, 0.2049194678) 100%, rgba(94, 94, 94, 0.6334908964) 100%);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 44vw;
+  height: 80vh;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+.contenido .container::-webkit-scrollbar {
+  display: none;
+}
+.contenido .container .contenedor_producto {
+  background-color: #ecfdfe;
+  box-shadow: 10px 10px 10px -4px rgba(22, 22, 22, 0.75);
+  width: 11rem;
+  height: 12rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--main-bg-color);
+  z-index: 10;
+  position: relative;
+  cursor: pointer;
+}
+.contenido .container .contenedor_producto .contenedor_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.contenido .container .contenedor_producto .contenedor_info a {
+  text-decoration: none;
+  color: rgb(33, 47, 69);
+  font-size: 16px;
+}
+.contenido .container .contenedor_producto .contenedor_info p {
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.contenido .container .contenedor_producto .contenedor_info .contenedor_img {
+  padding-top: 10px;
+}
+.contenido .container .contenedor_producto .contenedor_info .contenedor_img .pepe {
+  width: 70px;
+  border-radius: 100%;
+  padding: 3px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.contenido .container .contenedor_producto .contenedor_info .nombre {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding-top: 5px;
+  line-height: 8px;
+}
+.contenido .container .contenedor_producto .contenedor_info .email {
+  font-weight: 600;
+  font-size: 9px;
+}
+.contenido .container .contenedor_producto .contenedor_info .pais {
+  color: #928e8e;
+  font-weight: 600;
+  font-size: 10px;
+}
+
 @media (max-width: 762px) {
   .abrir_menu,
   .cerrar_menu {
@@ -721,6 +1028,43 @@ img.logo-contacto {
   }
   .form {
     width: 100%;
+  }
+  .formulario {
+    width: 300px;
+    height: 400px;
+  }
+  .contenido {
+    height: 140vh;
+    flex-direction: column;
+  }
+  .contenido .contenido__filtro {
+    width: 100%;
+    height: 60vh;
+  }
+  .contenido .contenido__filtro .filtro__main {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .contenido .contenido__filtro .filtro__main p {
+    font-size: 14px;
+  }
+  .contenido .container {
+    gap: 10px;
+    width: 90vw;
+    height: 50vh;
+  }
+  .contenido .container .contenedor_producto {
+    width: 7rem;
+    height: 10rem;
+  }
+  .contenido .container .contenedor_producto .contenedor_info {
+    gap: 5px;
+  }
+}
+@media (max-width: 380px) {
+  .formulario-login {
+    width: 200px;
+    height: 300px;
   }
 }
 

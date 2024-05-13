@@ -1,8 +1,19 @@
+@mixin caja-estilos {
+  padding: 3rem;
+  width: 55vw;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 10rem;
+}
 .cajaIntroduccion {
   padding: 0;
   margin: 0;
   height: 100vh;
-  background-image: url('/proyecto-coderhouse/assets/background-index.jpg');
+  background-image: url("../assets/background-index.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -71,15 +82,7 @@
 }
 
 .cajadeTexto {
-  padding: 3rem;
-  width: 55vw;
-  font-size: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  margin-bottom: 10rem;
+  @include caja-estilos;
 }
 .cajadeTexto-secundaria {
   width: 60%;
