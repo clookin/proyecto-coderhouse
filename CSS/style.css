@@ -1026,8 +1026,8 @@ main .main-login .formulario-login .login .grupo-registro {
     height: 90vh;
     background-position: bottom;
   }
-  .form {
-    width: 100%;
+  #contactForm {
+    width: 100vw;
   }
   .formulario {
     width: 300px;
@@ -1065,6 +1065,14 @@ main .main-login .formulario-login .login .grupo-registro {
   .formulario-login {
     width: 200px;
     height: 300px;
+  }
+  .contacto {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-position: bottom;
   }
 }
 
